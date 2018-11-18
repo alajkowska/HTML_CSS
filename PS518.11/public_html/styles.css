@@ -1,0 +1,80 @@
+/*@font-face {
+    font-family: "moja_czcionka";
+    src: url("Czcionki/nowa.ttf");
+}*/
+
+div.myform label{
+    display: block;
+    width: 25vw;
+    min-width: 4cm;
+    float:left;  
+    font-family: sans-serif;
+   
+    /*border: 1px solid black*/
+}
+div.myform input{
+    display: block;
+    margin: 2px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: .4em;
+    
+    /*clear:right;*/
+}
+div.myform input:focus{
+    background-color: lightgrey;
+    
+    /*clear:right;*/
+}
+/* dla wszystkich elementów które nosza nazwę "email"
+$= dla wszystkich elemetów kończoących się na daną frazę
+^= dla wszystkich elementow zaczynających się od danej frazy
+
+div.myform input[name="email"] { 
+    background-color: fuchsia;
+}*/
+div.myform input[name^="email"] {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    padding: .4em;
+    text-align: center;
+    margin: 2px;
+  
+    font-size: 10pt;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    background-image: url("koperta.jpg");
+    background-position: left;
+    background-size: 10%;
+    background-repeat: no-repeat;
+
+    /*    font-family: Tahoma;*/
+}
+/*a[href^="http://"]{
+    background-color: red;
+}
+ jeśli jest kilka to można po przecinku opisać: 
+a[href^="http://"],a[href^="https://"]{
+    background-color: red;
+}
+a[href^="mailto:"]{
+    background-color: blueviolet;
+}
+a[href^="mailto:"]:before{
+    background-color: violet;
+    content: "poczta: ";
+}
+a[href*="wp"]{
+    display: none;
+    można też:  visibility:hidden
+   przy ty usatwieniu widać puste pole, tj. można zauważyć że tam cos było
+   przy display - nadpisuje
+}*/
+
+div.myform input[type="button"]:active{
+    background-color: forestgreen;
+   
+}
+
